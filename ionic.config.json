@@ -1,0 +1,8 @@
+{
+  "name": "SpeachRecagnition",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

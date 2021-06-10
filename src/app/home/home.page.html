@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <br/>
+    <ion-button (click) = "checkPermissions ()">Check Permission</ion-button> <br/>
+    <ion-button (click) = "requestPermossions()">Request Permission</ion-button><br/>
+    <ion-button (click) = "speak()">Speech</ion-button><br/>
+    <ion-button (click) = "stop()">Stop</ion-button><br/>
+    <ion-button (click) = "show()">Show Message</ion-button><br/>
+    <p>Result:</p>
+    <p *ngIf = "isStop">{{str}}</p>
+  </div>
+</ion-content>
